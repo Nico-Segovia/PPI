@@ -1,0 +1,6 @@
+@OrdenesInversionAPI_HostAddress = http://localhost:5167
+
+GET {{OrdenesInversionAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
