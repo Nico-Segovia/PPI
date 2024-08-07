@@ -1,55 +1,90 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using OrdenesInversionAPI.Models;
-using OrdenesInversionAPI.Services;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace OrdenesInversionAPI.Controllers
+namespace OrdenesInversionAPI.Services
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class ActivosFinancierosController : ControllerBase
+    public class ActivoFinancieroService : IActivoFinancieroService
     {
-        private readonly IActivoFinancieroService _activoFinancieroService;
+        private readonly OrdenesInversionContext _context;
 
-        public ActivosFinancierosController(IActivoFinancieroService activoFinancieroService)
+        public ActivoFinancieroService(OrdenesInversionContext context)
         {
-            _activoFinancieroService = activoFinancieroService;
+            _context = context;
         }
 
-        // GET: api/ActivosFinancieros
-        [HttpGet]
         public async Task<ActionResult<IEnumerable<ActivoFinanciero>>> GetActivosFinancieros()
         {
-            return await _activoFinancieroService.GetActivosFinancieros();
+            return await _context.ActivosFinancieros.ToListAsync();
         }
 
-        // GET: api/ActivosFinancieros/5
-        [HttpGet("{id}")]
         public async Task<ActionResult<ActivoFinanciero>> GetActivoFinanciero(int id)
         {
-            return await _activoFinancieroService.GetActivoFinanciero(id);
+            var activoFinanciero = await _context.ActivosFinancieros.FindAsync(id);
+
+            if (activoFinanciero == null)
+            {
+                return new NotFoundResult();
+            }
+
+            return activoFinanciero;
         }
 
-        // PUT: api/ActivosFinancieros/5
-        [HttpPut("{id}")]
         public async Task<IActionResult> PutActivoFinanciero(int id, ActivoFinanciero activoFinanciero)
         {
-            return await _activoFinancieroService.PutActivoFinanciero(id, activoFinanciero);
+            if (id != activoFinanciero.Id)
+            {
+                return new BadRequestResult();
+            }
+
+            _context.Entry(activoFinanciero).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!ActivoFinancieroExists(id))
+                {
+                    return new NotFoundResult();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return new NoContentResult();
         }
 
-        // POST: api/ActivosFinancieros
-        [HttpPost]
         public async Task<ActionResult<ActivoFinanciero>> PostActivoFinanciero(ActivoFinanciero activoFinanciero)
         {
-            return await _activoFinancieroService.PostActivoFinanciero(activoFinanciero);
+            _context.ActivosFinancieros.Add(activoFinanciero);
+            await _context.SaveChangesAsync();
+
+            return new CreatedAtActionResult("GetActivoFinanciero", "ActivosFinancieros", new { id = activoFinanciero.Id }, activoFinanciero);
         }
 
-        // DELETE: api/ActivosFinancieros/5
-        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteActivoFinanciero(int id)
         {
-            return await _activoFinancieroService.DeleteActivoFinanciero(id);
+            var activoFinanciero = await _context.ActivosFinancieros.FindAsync(id);
+            if (activoFinanciero == null)
+            {
+                return new NotFoundResult();
+            }
+
+            _context.ActivosFinancieros.Remove(activoFinanciero);
+            await _context.SaveChangesAsync();
+
+            return new NoContentResult();
+        }
+
+        private bool ActivoFinancieroExists(int id)
+        {
+            return _context.ActivosFinancieros.Any(e => e.Id == id);
         }
     }
 }
