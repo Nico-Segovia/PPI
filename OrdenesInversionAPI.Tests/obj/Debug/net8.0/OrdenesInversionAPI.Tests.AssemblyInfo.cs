@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OrdenesInversionAPI.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9a9593849929defc36392877f3ccc33d052c5c98")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+78ce178b4e6fc256b7ed4cda521c29197da00828")]
 [assembly: System.Reflection.AssemblyProductAttribute("OrdenesInversionAPI.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OrdenesInversionAPI.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

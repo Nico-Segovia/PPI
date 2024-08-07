@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using OrdenesInversionAPI.Models;
 using OrdenesInversionAPI.Services;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
@@ -12,8 +13,11 @@ builder.Services.AddDbContext<OrdenesInversionContext>(options =>
     options.UseInMemoryDatabase(databaseName: "TestDb")
 );
 
-// Registro del servicio OrdenInversionService
+// Registro de los servicios
 builder.Services.AddScoped<IOrdenInversionService, OrdenInversionService>();
+builder.Services.AddScoped<IActivoFinancieroService, ActivoFinancieroService>();
+builder.Services.AddScoped<ITipoActivoService, TipoActivoService>();
+builder.Services.AddScoped<IEstadoOrdenService, EstadoOrdenService>();
 
 var app = builder.Build();
 
