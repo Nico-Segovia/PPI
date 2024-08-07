@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "j7Hm/pOG+tMX8pK9mDpx9LgrBJlYjV//04hTpPx3NsN+Z2exA+hlYlz6M7G0/kPWwQSJpO8TcidP9dYr4tGEhg==",
+  "dgSpecHash": "K8eFrazEjO1pcwQjO9KuDhrYbpTVcVrscZxilX9oICYBXM8cMM1FZQgD8N2Jhl58YfsH1WDO7pI8mQ92Kjfa7w==",
   "success": true,
   "projectFilePath": "C:\\Users\\jsegovia\\Desktop\\MisRepos\\PPI\\OrdenesInversionAPI\\OrdenesInversionAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\jsegovia\\.nuget\\packages\\aspnetcore.authentication.basic\\8.0.0\\aspnetcore.authentication.basic.8.0.0.nupkg.sha512",
     "C:\\Users\\jsegovia\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\jsegovia\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\jsegovia\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",

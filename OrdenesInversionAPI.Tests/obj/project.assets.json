@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "AspNetCore.Authentication.Basic/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/AspNetCore.Authentication.Basic.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/AspNetCore.Authentication.Basic.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Azure.Core/1.35.0": {
         "type": "package",
         "dependencies": {
@@ -4422,6 +4438,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "AspNetCore.Authentication.Basic": "8.0.0",
           "Microsoft.EntityFrameworkCore.InMemory": "8.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.7",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.3",
@@ -4440,6 +4457,43 @@
     }
   },
   "libraries": {
+    "AspNetCore.Authentication.Basic/8.0.0": {
+      "sha512": "E3NGoxhrEMOkZn26aFBRtA4cjnGwdVQb/kX+tS6jhwBTayAmL66vD0Vh6jr79AfAqxbCsqm9upYaX5QTOY6RmA==",
+      "type": "package",
+      "path": "aspnetcore.authentication.basic/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "aspnetcore.authentication.basic.8.0.0.nupkg.sha512",
+        "aspnetcore.authentication.basic.nuspec",
+        "lib/net461/AspNetCore.Authentication.Basic.dll",
+        "lib/net461/AspNetCore.Authentication.Basic.pdb",
+        "lib/net461/AspNetCore.Authentication.Basic.xml",
+        "lib/net5.0/AspNetCore.Authentication.Basic.dll",
+        "lib/net5.0/AspNetCore.Authentication.Basic.pdb",
+        "lib/net5.0/AspNetCore.Authentication.Basic.xml",
+        "lib/net6.0/AspNetCore.Authentication.Basic.dll",
+        "lib/net6.0/AspNetCore.Authentication.Basic.pdb",
+        "lib/net6.0/AspNetCore.Authentication.Basic.xml",
+        "lib/net7.0/AspNetCore.Authentication.Basic.dll",
+        "lib/net7.0/AspNetCore.Authentication.Basic.pdb",
+        "lib/net7.0/AspNetCore.Authentication.Basic.xml",
+        "lib/net8.0/AspNetCore.Authentication.Basic.dll",
+        "lib/net8.0/AspNetCore.Authentication.Basic.pdb",
+        "lib/net8.0/AspNetCore.Authentication.Basic.xml",
+        "lib/netcoreapp3.0/AspNetCore.Authentication.Basic.dll",
+        "lib/netcoreapp3.0/AspNetCore.Authentication.Basic.pdb",
+        "lib/netcoreapp3.0/AspNetCore.Authentication.Basic.xml",
+        "lib/netcoreapp3.1/AspNetCore.Authentication.Basic.dll",
+        "lib/netcoreapp3.1/AspNetCore.Authentication.Basic.pdb",
+        "lib/netcoreapp3.1/AspNetCore.Authentication.Basic.xml",
+        "lib/netstandard2.0/AspNetCore.Authentication.Basic.dll",
+        "lib/netstandard2.0/AspNetCore.Authentication.Basic.pdb",
+        "lib/netstandard2.0/AspNetCore.Authentication.Basic.xml"
+      ]
+    },
     "Azure.Core/1.35.0": {
       "sha512": "hENcx03Jyuqv05F4RBEPbxz29UrM3Nbhnr6Wl6NQpoU9BCIbL3XLentrxDCTrH54NLS11Exxi/o8MYgT/cnKFA==",
       "type": "package",
