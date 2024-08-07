@@ -330,3 +330,5 @@ C:\Users\jsegovia\Desktop\MisRepos\PPI\OrdenesInversionAPI.Tests\obj\Debug\net8.
 C:\Users\jsegovia\Desktop\MisRepos\PPI\OrdenesInversionAPI.Tests\obj\Debug\net8.0\OrdenesInversionAPI.Tests.pdb
 C:\Users\jsegovia\Desktop\MisRepos\PPI\OrdenesInversionAPI.Tests\obj\Debug\net8.0\OrdenesInversionAPI.Tests.genruntimeconfig.cache
 C:\Users\jsegovia\Desktop\MisRepos\PPI\OrdenesInversionAPI.Tests\obj\Debug\net8.0\ref\OrdenesInversionAPI.Tests.dll
+C:\Users\jsegovia\Desktop\MisRepos\PPI\OrdenesInversionAPI.Tests\bin\Debug\net8.0\AspNetCore.Authentication.Basic.dll
+C:\Users\jsegovia\Desktop\MisRepos\PPI\OrdenesInversionAPI.Tests\obj\Debug\net8.0\OrdenesInversionAPI.Tests.sourcelink.json

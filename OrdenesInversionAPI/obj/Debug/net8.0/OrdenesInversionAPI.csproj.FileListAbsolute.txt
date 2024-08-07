@@ -252,3 +252,5 @@ C:\Users\jsegovia\Desktop\MisRepos\PPI\OrdenesInversionAPI\obj\Debug\net8.0\refi
 C:\Users\jsegovia\Desktop\MisRepos\PPI\OrdenesInversionAPI\obj\Debug\net8.0\OrdenesInversionAPI.pdb
 C:\Users\jsegovia\Desktop\MisRepos\PPI\OrdenesInversionAPI\obj\Debug\net8.0\OrdenesInversionAPI.genruntimeconfig.cache
 C:\Users\jsegovia\Desktop\MisRepos\PPI\OrdenesInversionAPI\obj\Debug\net8.0\ref\OrdenesInversionAPI.dll
+C:\Users\jsegovia\Desktop\MisRepos\PPI\OrdenesInversionAPI\bin\Debug\net8.0\AspNetCore.Authentication.Basic.dll
+C:\Users\jsegovia\Desktop\MisRepos\PPI\OrdenesInversionAPI\obj\Debug\net8.0\OrdenesInversionAPI.sourcelink.json

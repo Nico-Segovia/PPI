@@ -82,6 +82,7 @@ namespace OrdenesInversionAPI.Services
 
         public async Task<ActionResult<OrdenInversion>> PostOrdenInversion(OrdenInversion ordenInversion)
         {
+            // Validación de la operación
             if (ordenInversion.Operacion != 'C' && ordenInversion.Operacion != 'V')
             {
                 return new BadRequestObjectResult("La operación debe ser 'C' (Compra) o 'V' (Venta).");
@@ -137,12 +138,11 @@ namespace OrdenesInversionAPI.Services
             }
             catch (DbUpdateException ex)
             {
-                return new StatusCodeResult(500); 
+                return new StatusCodeResult(500); // Internal Server Error
             }
 
             return new CreatedAtActionResult("GetOrdenInversion", "OrdenInversions", new { id = ordenInversion.Id }, ordenInversion);
         }
-
 
         public async Task<IActionResult> DeleteOrdenInversion(int id)
         {
@@ -164,3 +164,5 @@ namespace OrdenesInversionAPI.Services
         }
     }
 }
+
+

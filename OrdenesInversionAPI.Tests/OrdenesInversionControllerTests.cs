@@ -58,8 +58,10 @@ namespace OrdenesInversionAPI.Tests
         {
             // Arrange
             var options = new DbContextOptionsBuilder<OrdenesInversionContext>()
-                .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString())
+                .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString()) // Nombre de base de datos único
                 .Options;
+
+            // No es necesario agregar el activo financiero aquí
 
             var mockService = new Mock<IOrdenInversionService>();
             mockService.Setup(s => s.PostOrdenInversion(It.IsAny<OrdenInversion>()))
@@ -91,6 +93,7 @@ namespace OrdenesInversionAPI.Tests
             var ordenCreada = Assert.IsType<OrdenInversion>(createdResult.Value);
             Assert.Equal(17692.79m, ordenCreada.MontoTotal); // 177.97 * 100 - 0.6% - 21% de 0.6%
         }
+
 
         [Fact]
         public async Task PostOrdenInversion_CalculaMontoTotalCorrectamente_ParaBono_Compra()
@@ -394,18 +397,23 @@ namespace OrdenesInversionAPI.Tests
         [Fact]
         public async Task PutOrdenInversion_ActualizaEstadoCorrectamente()
         {
+            // Arrange
             var mockService = new Mock<IOrdenInversionService>();
 
+            // Configuramos el mock para que el método PutOrdenInversion no devuelva ningún contenido (éxito)
             mockService.Setup(s => s.PutOrdenInversion(1, It.IsAny<OrdenInversion>()))
                        .ReturnsAsync(new NoContentResult());
 
             var controller = new OrdenInversionsController(mockService.Object);
             var ordenActualizada = new OrdenInversion { Id = 1, Estado = 1 }; // Nuevo estado: "Ejecutada"
 
+            // Act
             var result = await controller.PutOrdenInversion(1, ordenActualizada);
 
+            // Assert
             var noContentResult = Assert.IsType<NoContentResult>(result);
 
+            // Verificar que se llamó al método PutOrdenInversion del servicio con los parámetros correctos
             mockService.Verify(s => s.PutOrdenInversion(1, ordenActualizada), Times.Once);
         }
 
