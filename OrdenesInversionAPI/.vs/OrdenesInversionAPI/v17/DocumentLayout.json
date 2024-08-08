@@ -3,36 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\jsegovia\\Desktop\\MisRepos\\PPI\\OrdenesInversionAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|c:\\users\\jsegovia\\desktop\\misrepos\\ppi\\ordenesinversionapi\\services\\activofinancieroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|solutionrelative:services\\activofinancieroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|c:\\users\\jsegovia\\desktop\\misrepos\\ppi\\ordenesinversionapi\\controllers\\activofinancieroescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|solutionrelative:controllers\\activofinancieroescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|c:\\users\\jsegovia\\desktop\\misrepos\\ppi\\ordenesinversionapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|c:\\users\\jsegovia\\desktop\\misrepos\\ppi\\ordenesinversionapi\\services\\iactivofinancieroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|solutionrelative:services\\iactivofinancieroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|c:\\users\\jsegovia\\desktop\\misrepos\\ppi\\ordenesinversionapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|c:\\users\\jsegovia\\desktop\\misrepos\\ppi\\ordenesinversionapi\\services\\estadoordenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|solutionrelative:services\\estadoordenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|c:\\users\\jsegovia\\desktop\\misrepos\\ppi\\ordenesinversionapi\\controllers\\estadoordencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|solutionrelative:controllers\\estadoordencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|c:\\users\\jsegovia\\desktop\\misrepos\\ppi\\ordenesinversionapi\\controllers\\tiposactivoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|solutionrelative:controllers\\tiposactivoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|c:\\users\\jsegovia\\desktop\\misrepos\\ppi\\ordenesinversionapi\\services\\tipoactivoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|solutionrelative:services\\tipoactivoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|c:\\users\\jsegovia\\desktop\\misrepos\\ppi\\ordenesinversionapi\\services\\activofinancieroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|solutionrelative:services\\activofinancieroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|c:\\users\\jsegovia\\desktop\\misrepos\\ppi\\ordenesinversionapi\\services\\iestadoordenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,11 +27,31 @@
       "RelativeMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|solutionrelative:services\\itipoactivoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|c:\\users\\jsegovia\\desktop\\misrepos\\ppi\\ordenesinversionapi\\services\\iactivofinancieroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|solutionrelative:services\\iactivofinancieroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|c:\\users\\jsegovia\\desktop\\misrepos\\ppi\\ordenesinversionapi\\controllers\\estadoordencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|solutionrelative:controllers\\estadoordencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|c:\\users\\jsegovia\\desktop\\misrepos\\ppi\\ordenesinversionapi\\controllers\\tiposactivoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|solutionrelative:controllers\\tiposactivoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|c:\\users\\jsegovia\\desktop\\misrepos\\ppi\\ordenesinversionapi\\controllers\\activofinancieroescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|solutionrelative:controllers\\activofinancieroescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{37BFD613-27F9-4793-A5ED-B6F095E34BE6}|..\\OrdenesInversionAPI.Tests\\OrdenesInversionAPI.Tests.csproj|c:\\users\\jsegovia\\desktop\\misrepos\\ppi\\ordenesinversionapi.tests\\ordenesinversioncontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|c:\\users\\jsegovia\\desktop\\misrepos\\ppi\\ordenesinversionapi\\services\\ordeninversionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|solutionrelative:services\\ordeninversionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|c:\\users\\jsegovia\\desktop\\misrepos\\ppi\\ordenesinversionapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -57,15 +61,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\jsegovia\\Desktop\\MisRepos\\PPI\\OrdenesInversionAPI\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "C:\\Users\\jsegovia\\Desktop\\MisRepos\\PPI\\OrdenesInversionAPI\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-08-07T15:45:19.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "EstadoOrdenService.cs",
               "DocumentMoniker": "C:\\Users\\jsegovia\\Desktop\\MisRepos\\PPI\\OrdenesInversionAPI\\Services\\EstadoOrdenService.cs",
               "RelativeDocumentMoniker": "Services\\EstadoOrdenService.cs",
@@ -77,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "TipoActivoService.cs",
               "DocumentMoniker": "C:\\Users\\jsegovia\\Desktop\\MisRepos\\PPI\\OrdenesInversionAPI\\Services\\TipoActivoService.cs",
               "RelativeDocumentMoniker": "Services\\TipoActivoService.cs",
@@ -89,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "ActivoFinancieroService.cs",
               "DocumentMoniker": "C:\\Users\\jsegovia\\Desktop\\MisRepos\\PPI\\OrdenesInversionAPI\\Services\\ActivoFinancieroService.cs",
               "RelativeDocumentMoniker": "Services\\ActivoFinancieroService.cs",
@@ -97,12 +118,11 @@
               "RelativeToolTip": "Services\\ActivoFinancieroService.cs",
               "ViewState": "AQIAAEkAAAAAAAAAAAAUwFUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T13:55:02.369Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-07T13:55:02.369Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "IEstadoOrdenService.cs",
               "DocumentMoniker": "C:\\Users\\jsegovia\\Desktop\\MisRepos\\PPI\\OrdenesInversionAPI\\Services\\IEstadoOrdenService.cs",
               "RelativeDocumentMoniker": "Services\\IEstadoOrdenService.cs",
@@ -114,7 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "ITipoActivoService.cs",
               "DocumentMoniker": "C:\\Users\\jsegovia\\Desktop\\MisRepos\\PPI\\OrdenesInversionAPI\\Services\\ITipoActivoService.cs",
               "RelativeDocumentMoniker": "Services\\ITipoActivoService.cs",
@@ -126,7 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "IActivoFinancieroService.cs",
               "DocumentMoniker": "C:\\Users\\jsegovia\\Desktop\\MisRepos\\PPI\\OrdenesInversionAPI\\Services\\IActivoFinancieroService.cs",
               "RelativeDocumentMoniker": "Services\\IActivoFinancieroService.cs",
@@ -138,7 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "EstadoOrdenController.cs",
               "DocumentMoniker": "C:\\Users\\jsegovia\\Desktop\\MisRepos\\PPI\\OrdenesInversionAPI\\Controllers\\EstadoOrdenController.cs",
               "RelativeDocumentMoniker": "Controllers\\EstadoOrdenController.cs",
@@ -150,7 +170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "TiposActivosController.cs",
               "DocumentMoniker": "C:\\Users\\jsegovia\\Desktop\\MisRepos\\PPI\\OrdenesInversionAPI\\Controllers\\TiposActivosController.cs",
               "RelativeDocumentMoniker": "Controllers\\TiposActivosController.cs",
@@ -162,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "ActivoFinancieroesController.cs",
               "DocumentMoniker": "C:\\Users\\jsegovia\\Desktop\\MisRepos\\PPI\\OrdenesInversionAPI\\Controllers\\ActivoFinancieroesController.cs",
               "RelativeDocumentMoniker": "Controllers\\ActivoFinancieroesController.cs",
@@ -170,8 +190,7 @@
               "RelativeToolTip": "Controllers\\ActivoFinancieroesController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T13:46:14.088Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-07T13:46:14.088Z"
             },
             {
               "$type": "Document",
@@ -199,7 +218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\jsegovia\\Desktop\\MisRepos\\PPI\\OrdenesInversionAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -207,8 +226,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T01:06:01.413Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-05T01:06:01.413Z"
             }
           ]
         }

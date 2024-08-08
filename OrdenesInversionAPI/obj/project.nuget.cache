@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "K8eFrazEjO1pcwQjO9KuDhrYbpTVcVrscZxilX9oICYBXM8cMM1FZQgD8N2Jhl58YfsH1WDO7pI8mQ92Kjfa7w==",
+  "dgSpecHash": "R/m4dNcqeI4BKB1KE7+Wib473etRmu21oZpElO4k12Ga8N1gqfW8LOYQFop+sWhjvojKc7bWqNad2PCZboLgHw==",
   "success": true,
   "projectFilePath": "C:\\Users\\jsegovia\\Desktop\\MisRepos\\PPI\\OrdenesInversionAPI\\OrdenesInversionAPI.csproj",
   "expectedPackageFiles": [
@@ -109,6 +109,7 @@
     "C:\\Users\\jsegovia\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\jsegovia\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\jsegovia\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
+    "C:\\Users\\jsegovia\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.6\\microsoft.visualstudio.azure.containers.tools.targets.1.19.6.nupkg.sha512",
     "C:\\Users\\jsegovia\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\8.0.3\\microsoft.visualstudio.web.codegeneration.8.0.3.nupkg.sha512",
     "C:\\Users\\jsegovia\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\8.0.3\\microsoft.visualstudio.web.codegeneration.core.8.0.3.nupkg.sha512",
     "C:\\Users\\jsegovia\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.design\\8.0.3\\microsoft.visualstudio.web.codegeneration.design.8.0.3.nupkg.sha512",
