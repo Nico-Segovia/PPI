@@ -1,11 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace OrdenesInversionAPI.Models
 {
     public class OrdenInversion
     {
-        public int Id { get; set; }
+        public int Id { get; set; } 
 
         [Required]
         public int IdCuentaInversion { get; set; }
@@ -26,10 +25,8 @@ namespace OrdenesInversionAPI.Models
         [RegularExpression("^[CV]$", ErrorMessage = "La operación debe ser 'C' (Compra) o 'V' (Venta).")]
         public char Operacion { get; set; }
 
-        public int EstadoId { get; set; } // Clave foránea
 
-        [ForeignKey("EstadoId")]
-        public EstadoOrden Estado { get; set; } // Propiedad de navegación
+        public int Estado { get; set; } // Valor por defecto es 0 ("En proceso")
 
         public decimal MontoTotal { get; set; }
     }

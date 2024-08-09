@@ -1,96 +1,50 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using OrdenesInversionAPI.Models;
+using OrdenesInversionAPI.Services;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
-[ApiController]
-[Route("api/[controller]")]
-public class OrdenesInversionController : ControllerBase
+namespace OrdenesInversionAPI.Controllers
 {
-    private readonly OrdenesInversionContext _context;
-
-    public OrdenesInversionController(OrdenesInversionContext context)
+    [Route("api/[controller]")]
+    [ApiController]
+    public class OrdenInversionsController : ControllerBase
     {
-        _context = context;
-    }
+        private readonly IOrdenInversionService _ordenInversionService;
 
-    [HttpGet]
-    public async Task<ActionResult<IEnumerable<OrdenInversion>>> GetOrdenesInversion()
-    {
-        return await _context.OrdenesInversiones
-            .Include(o => o.Estado)
-            .ToListAsync();
-    }
-
-    [HttpGet("{id}")]
-    public async Task<ActionResult<OrdenInversion>> GetOrdenInversion(int id)
-    {
-        var ordenInversion = await _context.OrdenesInversiones
-            .Include(o => o.Estado)
-            .FirstOrDefaultAsync(o => o.Id == id);
-
-        if (ordenInversion == null)
+        public OrdenInversionsController(IOrdenInversionService ordenInversionService)
         {
-            return NotFound();
+            _ordenInversionService = ordenInversionService;
         }
 
-        return ordenInversion;
-    }
-
-    [HttpPut("{id}")]
-    public async Task<IActionResult> PutOrdenInversion(int id, OrdenInversion ordenInversion)
-    {
-        if (id != ordenInversion.Id)
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<OrdenInversion>>> GetOrdenesInversion()
         {
-            return BadRequest();
+            return await _ordenInversionService.GetOrdenesInversion();
         }
 
-        _context.Entry(ordenInversion).State = EntityState.Modified;
-
-        try
+        [HttpGet("{id}")]
+        public async Task<ActionResult<OrdenInversion>> GetOrdenInversion(int id)
         {
-            await _context.SaveChangesAsync();
-        }
-        catch (DbUpdateConcurrencyException)
-        {
-            if (!OrdenInversionExists(id))
-            {
-                return NotFound();
-            }
-            else
-            {
-                throw;
-            }
+            return await _ordenInversionService.GetOrdenInversion(id);
         }
 
-        return NoContent();
-    }
-
-    [HttpPost]
-    public async Task<ActionResult<OrdenInversion>> PostOrdenInversion(OrdenInversion ordenInversion)
-    {
-        _context.OrdenesInversiones.Add(ordenInversion);
-        await _context.SaveChangesAsync();
-
-        return CreatedAtAction("GetOrdenInversion", new { id = ordenInversion.Id }, ordenInversion);
-    }
-
-    [HttpDelete("{id}")]
-    public async Task<IActionResult> DeleteOrdenInversion(int id)
-    {
-        var ordenInversion = await _context.OrdenesInversiones.FindAsync(id);
-        if (ordenInversion == null)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutOrdenInversion(int id, OrdenInversion ordenInversion)
         {
-            return NotFound();
+            return await _ordenInversionService.PutOrdenInversion(id, ordenInversion);
         }
 
-        _context.OrdenesInversiones.Remove(ordenInversion);
-        await _context.SaveChangesAsync();
+        [HttpPost]
+        public async Task<ActionResult<OrdenInversion>> PostOrdenInversion(OrdenInversion ordenInversion)
+        {
+            return await _ordenInversionService.PostOrdenInversion(ordenInversion);
+        }
 
-        return NoContent();
-    }
-
-    private bool OrdenInversionExists(int id)
-    {
-        return _context.OrdenesInversiones.Any(e => e.Id == id);
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteOrdenInversion(int id)
+        {
+            return await _ordenInversionService.DeleteOrdenInversion(id);
+        }
     }
 }

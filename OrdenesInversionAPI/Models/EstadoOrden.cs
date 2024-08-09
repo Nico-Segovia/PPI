@@ -1,9 +1,8 @@
-﻿using OrdenesInversionAPI.Models;
-
-public class EstadoOrden
+﻿namespace OrdenesInversionAPI.Models
 {
-    public int Id { get; set; }
-    public string DescripcionEstado { get; set; }
-
-    public ICollection<OrdenInversion> OrdenesInversion { get; set; }
+    public class EstadoOrden
+    {
+        public int Id { get; set; }
+        public string DescripcionEstado { get; set; }
+    }
 }

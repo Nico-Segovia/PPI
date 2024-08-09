@@ -17,12 +17,12 @@ namespace OrdenesInversionAPI.Services
 
         public async Task<ActionResult<IEnumerable<EstadoOrden>>> GetEstadosOrden()
         {
-            return await _context.EstadosOrdenes.ToListAsync(); // Utiliza "EstadosOrdenes" aquí
+            return await _context.EstadosOrden.ToListAsync();
         }
 
         public async Task<ActionResult<EstadoOrden>> GetEstadoOrden(int id)
         {
-            var estadoOrden = await _context.EstadosOrdenes.FindAsync(id); // Utiliza "EstadosOrdenes" aquí
+            var estadoOrden = await _context.EstadosOrden.FindAsync(id);
 
             if (estadoOrden == null)
             {
@@ -62,7 +62,7 @@ namespace OrdenesInversionAPI.Services
 
         public async Task<ActionResult<EstadoOrden>> PostEstadoOrden(EstadoOrden estadoOrden)
         {
-            _context.EstadosOrdenes.Add(estadoOrden); // Utiliza "EstadosOrdenes" aquí
+            _context.EstadosOrden.Add(estadoOrden);
             await _context.SaveChangesAsync();
 
             return new CreatedAtActionResult("GetEstadoOrden", "EstadosOrden", new { id = estadoOrden.Id }, estadoOrden);
@@ -70,13 +70,13 @@ namespace OrdenesInversionAPI.Services
 
         public async Task<IActionResult> DeleteEstadoOrden(int id)
         {
-            var estadoOrden = await _context.EstadosOrdenes.FindAsync(id); // Utiliza "EstadosOrdenes" aquí
+            var estadoOrden = await _context.EstadosOrden.FindAsync(id);
             if (estadoOrden == null)
             {
                 return new NotFoundResult();
             }
 
-            _context.EstadosOrdenes.Remove(estadoOrden); // Utiliza "EstadosOrdenes" aquí
+            _context.EstadosOrden.Remove(estadoOrden);
             await _context.SaveChangesAsync();
 
             return new NoContentResult();
@@ -84,7 +84,7 @@ namespace OrdenesInversionAPI.Services
 
         private bool EstadoOrdenExists(int id)
         {
-            return _context.EstadosOrdenes.Any(e => e.Id == id); // Utiliza "EstadosOrdenes" aquí
+            return _context.EstadosOrden.Any(e => e.Id == id);
         }
     }
 }

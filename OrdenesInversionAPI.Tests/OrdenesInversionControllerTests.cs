@@ -397,18 +397,23 @@ namespace OrdenesInversionAPI.Tests
         [Fact]
         public async Task PutOrdenInversion_ActualizaEstadoCorrectamente()
         {
+            // Arrange
             var mockService = new Mock<IOrdenInversionService>();
 
+            // Configuramos el mock para que el método PutOrdenInversion no devuelva ningún contenido (éxito)
             mockService.Setup(s => s.PutOrdenInversion(1, It.IsAny<OrdenInversion>()))
                        .ReturnsAsync(new NoContentResult());
 
             var controller = new OrdenInversionsController(mockService.Object);
-            var ordenActualizada = new OrdenInversion { Id = 1, Estado = 1 };
+            var ordenActualizada = new OrdenInversion { Id = 1, Estado = 1 }; // Nuevo estado: "Ejecutada"
 
+            // Act
             var result = await controller.PutOrdenInversion(1, ordenActualizada);
 
+            // Assert
             var noContentResult = Assert.IsType<NoContentResult>(result);
 
+            // Verificar que se llamó al método PutOrdenInversion del servicio con los parámetros correctos
             mockService.Verify(s => s.PutOrdenInversion(1, ordenActualizada), Times.Once);
         }
 

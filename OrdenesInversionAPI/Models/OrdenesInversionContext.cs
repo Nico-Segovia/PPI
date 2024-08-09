@@ -1,27 +1,45 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using OrdenesInversionAPI.Models;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
 
 namespace OrdenesInversionAPI.Models
 {
     public class OrdenesInversionContext : DbContext
     {
-        public DbSet<ActivoFinanciero> ActivosFinancieros { get; set; }
-        public DbSet<EstadoOrden> EstadosOrdenes { get; set; }
-        public DbSet<OrdenInversion> OrdenesInversiones { get; set; }
-        public DbSet<Usuario> Usuarios { get; set; }
+        public OrdenesInversionContext(DbContextOptions<OrdenesInversionContext> options)
+    : base(options)
+        { }
+
+        // Constructor adicional para pruebas
+        public OrdenesInversionContext(DbContextOptionsBuilder<OrdenesInversionContext> optionsBuilder)
+            : base(optionsBuilder.Options)
+        { }
+
+
+        public DbSet<OrdenInversion> OrdenesInversion { get; set; }
+        public virtual DbSet<ActivoFinanciero> ActivosFinancieros { get; set; }
+
+        public DbSet<TipoActivo> TiposActivo { get; set; }
+        public DbSet<EstadoOrden> EstadosOrden { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=localhost;Database=OrdenesInversionDB;Integrated Security=True;");
+            optionsBuilder.UseInMemoryDatabase("OrdenesInversionDb");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Configuración de la relación entre EstadoOrden y OrdenInversion
-            modelBuilder.Entity<EstadoOrden>()
-                .HasMany(e => e.OrdenesInversion)
-                .WithOne(o => o.Estado)
-                .HasForeignKey(o => o.EstadoId);
+            modelBuilder.Entity<OrdenInversion>()
+                .Property(o => o.Precio)
+                .HasColumnType("decimal(18, 2)");
+
+            modelBuilder.Entity<OrdenInversion>()
+                .Property(o => o.MontoTotal)
+                .HasColumnType("decimal(18, 2)");
+
+            modelBuilder.Entity<ActivoFinanciero>()
+                .Property(a => a.PrecioUnitario)
+                .HasColumnType("decimal(18, 2)");
         }
     }
 }

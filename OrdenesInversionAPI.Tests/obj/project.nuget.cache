@@ -1,13 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "5h6dif4lYZfv54QY7xncRwWMDNyTCovSxVbNUseBRcKlUBN9dnf4Bana89rykCQCOq9UhsqhfupjfOl3piyrmg==",
+  "dgSpecHash": "A2cikTLujFisfZsQ/+WDMe+c+39Z6Y6HRRNzXXEFCC2Irl++TqIu3aVf3EDt1sT4G6CncILYxJDhI9CTlgLYVg==",
   "success": true,
   "projectFilePath": "C:\\Users\\jsegovia\\Desktop\\MisRepos\\PPI\\OrdenesInversionAPI.Tests\\OrdenesInversionAPI.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jsegovia\\.nuget\\packages\\aspnetcore.authentication.basic\\8.0.0\\aspnetcore.authentication.basic.8.0.0.nupkg.sha512",
     "C:\\Users\\jsegovia\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\jsegovia\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
-    "C:\\Users\\jsegovia\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\jsegovia\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\jsegovia\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\jsegovia\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
@@ -114,7 +113,6 @@
     "C:\\Users\\jsegovia\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\jsegovia\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.8.0\\microsoft.testplatform.objectmodel.17.8.0.nupkg.sha512",
     "C:\\Users\\jsegovia\\.nuget\\packages\\microsoft.testplatform.testhost\\17.8.0\\microsoft.testplatform.testhost.17.8.0.nupkg.sha512",
-    "C:\\Users\\jsegovia\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.6\\microsoft.visualstudio.azure.containers.tools.targets.1.19.6.nupkg.sha512",
     "C:\\Users\\jsegovia\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\8.0.3\\microsoft.visualstudio.web.codegeneration.8.0.3.nupkg.sha512",
     "C:\\Users\\jsegovia\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\8.0.3\\microsoft.visualstudio.web.codegeneration.core.8.0.3.nupkg.sha512",
     "C:\\Users\\jsegovia\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.design\\8.0.3\\microsoft.visualstudio.web.codegeneration.design.8.0.3.nupkg.sha512",
