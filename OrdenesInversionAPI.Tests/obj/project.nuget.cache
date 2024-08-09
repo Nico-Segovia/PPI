@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Gop1uHarfIrW747JnoNDEG6/u10WTpD3I6vs68BHFmVE7MFWi++NHxZFyf6r0AfAm1il2LaNDU99eaiWqbgD/A==",
+  "dgSpecHash": "5h6dif4lYZfv54QY7xncRwWMDNyTCovSxVbNUseBRcKlUBN9dnf4Bana89rykCQCOq9UhsqhfupjfOl3piyrmg==",
   "success": true,
   "projectFilePath": "C:\\Users\\jsegovia\\Desktop\\MisRepos\\PPI\\OrdenesInversionAPI.Tests\\OrdenesInversionAPI.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jsegovia\\.nuget\\packages\\aspnetcore.authentication.basic\\8.0.0\\aspnetcore.authentication.basic.8.0.0.nupkg.sha512",
     "C:\\Users\\jsegovia\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\jsegovia\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\jsegovia\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\jsegovia\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\jsegovia\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\jsegovia\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",

@@ -1,55 +1,92 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using OrdenesInversionAPI.Models;
-using OrdenesInversionAPI.Services;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
-namespace OrdenesInversionAPI.Controllers
+[ApiController]
+[Route("api/[controller]")]
+public class EstadosOrdenController : ControllerBase
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class EstadosOrdenController : ControllerBase
+    private readonly OrdenesInversionContext _context;
+
+    public EstadosOrdenController(OrdenesInversionContext context)
     {
-        private readonly IEstadoOrdenService _estadoOrdenService;
+        _context = context;
+    }
 
-        public EstadosOrdenController(IEstadoOrdenService estadoOrdenService)
+    [HttpGet]
+    public async Task<ActionResult<IEnumerable<EstadoOrden>>> GetEstadosOrden()
+    {
+        return await _context.EstadosOrdenes.ToListAsync();
+    }
+
+    [HttpGet("{id}")]
+    public async Task<ActionResult<EstadoOrden>> GetEstadoOrden(int id)
+    {
+        var estadoOrden = await _context.EstadosOrdenes.FindAsync(id);
+
+        if (estadoOrden == null)
         {
-            _estadoOrdenService = estadoOrdenService;
+            return NotFound();
         }
 
-        // GET: api/EstadosOrden
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<EstadoOrden>>> GetEstadosOrden()
+        return estadoOrden;
+    }
+
+    [HttpPut("{id}")]
+    public async Task<IActionResult> PutEstadoOrden(int id, EstadoOrden estadoOrden)
+    {
+        if (id != estadoOrden.Id)
         {
-            return await _estadoOrdenService.GetEstadosOrden();
+            return BadRequest();
         }
 
-        // GET: api/EstadosOrden/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<EstadoOrden>> GetEstadoOrden(int id)
+        _context.Entry(estadoOrden).State = EntityState.Modified;
+
+        try
         {
-            return await _estadoOrdenService.GetEstadoOrden(id);
+            await _context.SaveChangesAsync();
+        }
+        catch (DbUpdateConcurrencyException)
+        {
+            if (!EstadoOrdenExists(id))
+            {
+                return NotFound();
+            }
+            else
+            {
+                throw;
+            }
         }
 
-        // PUT: api/EstadosOrden/5
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutEstadoOrden(int id, EstadoOrden estadoOrden)
+        return NoContent();
+    }
+
+    [HttpPost]
+    public async Task<ActionResult<EstadoOrden>> PostEstadoOrden(EstadoOrden estadoOrden)
+    {
+        _context.EstadosOrdenes.Add(estadoOrden);
+        await _context.SaveChangesAsync();
+
+        return CreatedAtAction("GetEstadoOrden", new { id = estadoOrden.Id }, estadoOrden);
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteEstadoOrden(int id)
+    {
+        var estadoOrden = await _context.EstadosOrdenes.FindAsync(id);
+        if (estadoOrden == null)
         {
-            return await _estadoOrdenService.PutEstadoOrden(id, estadoOrden);
+            return NotFound();
         }
 
-        // POST: api/EstadosOrden
-        [HttpPost]
-        public async Task<ActionResult<EstadoOrden>> PostEstadoOrden(EstadoOrden estadoOrden)
-        {
-            return await _estadoOrdenService.PostEstadoOrden(estadoOrden);
-        }
+        _context.EstadosOrdenes.Remove(estadoOrden);
+        await _context.SaveChangesAsync();
 
-        // DELETE: api/EstadosOrden/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteEstadoOrden(int id)
-        {
-            return await _estadoOrdenService.DeleteEstadoOrden(id);
-        }
+        return NoContent();
+    }
+
+    private bool EstadoOrdenExists(int id)
+    {
+        return _context.EstadosOrdenes.Any(e => e.Id == id);
     }
 }

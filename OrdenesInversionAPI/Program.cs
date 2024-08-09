@@ -1,7 +1,8 @@
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.EntityFrameworkCore;
+using OrdenesInversionAPI.Handlers;
 using OrdenesInversionAPI.Models;
 using OrdenesInversionAPI.Services;
-
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,11 +14,23 @@ builder.Services.AddDbContext<OrdenesInversionContext>(options =>
     options.UseInMemoryDatabase(databaseName: "TestDb")
 );
 
-// Registro de los servicios
 builder.Services.AddScoped<IOrdenInversionService, OrdenInversionService>();
 builder.Services.AddScoped<IActivoFinancieroService, ActivoFinancieroService>();
 builder.Services.AddScoped<ITipoActivoService, TipoActivoService>();
 builder.Services.AddScoped<IEstadoOrdenService, EstadoOrdenService>();
+builder.Services.AddScoped<IUserService, UserService>();
+
+// Configuración de la autenticación básica
+builder.Services.AddAuthentication("BasicAuthentication")
+    .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>("BasicAuthentication", null);
+
+// Configuración de la autorización basada en claims
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("CanCreateOrder", policy => policy.RequireClaim("CanCreateOrder", "true"));
+    options.AddPolicy("CanUpdateOrder", policy => policy.RequireClaim("CanUpdateOrder", "true"));
+    options.AddPolicy("CanDeleteOrder", policy => policy.RequireClaim("CanDeleteOrder", "true"));
+});
 
 var app = builder.Build();
 
@@ -29,6 +42,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

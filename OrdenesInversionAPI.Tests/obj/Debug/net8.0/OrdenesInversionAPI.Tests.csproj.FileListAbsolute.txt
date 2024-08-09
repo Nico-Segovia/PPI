@@ -16,6 +16,7 @@ C:\Users\jsegovia\Desktop\MisRepos\PPI\OrdenesInversionAPI.Tests\bin\Debug\net8.
 C:\Users\jsegovia\Desktop\MisRepos\PPI\OrdenesInversionAPI.Tests\bin\Debug\net8.0\AspNetCore.Authentication.Basic.dll
 C:\Users\jsegovia\Desktop\MisRepos\PPI\OrdenesInversionAPI.Tests\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\jsegovia\Desktop\MisRepos\PPI\OrdenesInversionAPI.Tests\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\jsegovia\Desktop\MisRepos\PPI\OrdenesInversionAPI.Tests\bin\Debug\net8.0\BCrypt.Net-Next.dll
 C:\Users\jsegovia\Desktop\MisRepos\PPI\OrdenesInversionAPI.Tests\bin\Debug\net8.0\Castle.Core.dll
 C:\Users\jsegovia\Desktop\MisRepos\PPI\OrdenesInversionAPI.Tests\bin\Debug\net8.0\Humanizer.dll
 C:\Users\jsegovia\Desktop\MisRepos\PPI\OrdenesInversionAPI.Tests\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll

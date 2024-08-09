@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "R/m4dNcqeI4BKB1KE7+Wib473etRmu21oZpElO4k12Ga8N1gqfW8LOYQFop+sWhjvojKc7bWqNad2PCZboLgHw==",
+  "dgSpecHash": "tCGHaa/LZlSFh63BHKGFiGNRiptYK5I8FSG/vwN9yNChOTvNgd4tXwyEJx97EJhiJAEVR0cWq0vTh2Ef40611Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\jsegovia\\Desktop\\MisRepos\\PPI\\OrdenesInversionAPI\\OrdenesInversionAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jsegovia\\.nuget\\packages\\aspnetcore.authentication.basic\\8.0.0\\aspnetcore.authentication.basic.8.0.0.nupkg.sha512",
     "C:\\Users\\jsegovia\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\jsegovia\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\jsegovia\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\jsegovia\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\jsegovia\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\jsegovia\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",
