@@ -32,6 +32,11 @@ namespace OrdenesInversionAPI.Services
             return activoFinanciero;
         }
 
+        public async Task<ActivoFinanciero> GetActivoFinancieroPorNombre(string nombre)
+        {
+            return await _context.ActivosFinancieros.FirstOrDefaultAsync(a => a.Nombre == nombre);
+        }
+
         public async Task<IActionResult> PutActivoFinanciero(int id, ActivoFinanciero activoFinanciero)
         {
             if (id != activoFinanciero.Id)
