@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\jsegovia\\Desktop\\MisRepos\\PPI\\OrdenesInversionAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|c:\\users\\jsegovia\\desktop\\misrepos\\ppi\\ordenesinversionapi\\services\\ordeninversionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|solutionrelative:services\\ordeninversionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|c:\\users\\jsegovia\\desktop\\misrepos\\ppi\\ordenesinversionapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,12 +11,16 @@
       "RelativeMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|solutionrelative:models\\ordenesinversioncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|c:\\users\\jsegovia\\desktop\\misrepos\\ppi\\ordenesinversionapi\\models\\ordeninversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|solutionrelative:models\\ordeninversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|c:\\users\\jsegovia\\desktop\\misrepos\\ppi\\ordenesinversionapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|c:\\users\\jsegovia\\desktop\\misrepos\\ppi\\ordenesinversionapi\\services\\ordeninversionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|solutionrelative:services\\ordeninversionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|c:\\users\\jsegovia\\desktop\\misrepos\\ppi\\ordenesinversionapi\\models\\ordeninversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D690B972-DEE7-44AD-8ABD-2D78CF2DCE51}|OrdenesInversionAPI.csproj|solutionrelative:models\\ordeninversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,59 +42,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "OrdenInversionService.cs",
               "DocumentMoniker": "C:\\Users\\jsegovia\\Desktop\\MisRepos\\PPI\\OrdenesInversionAPI\\Services\\OrdenInversionService.cs",
               "RelativeDocumentMoniker": "Services\\OrdenInversionService.cs",
               "ToolTip": "C:\\Users\\jsegovia\\Desktop\\MisRepos\\PPI\\OrdenesInversionAPI\\Services\\OrdenInversionService.cs",
               "RelativeToolTip": "Services\\OrdenInversionService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-09T00:52:21.347Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\jsegovia\\Desktop\\MisRepos\\PPI\\OrdenesInversionAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\jsegovia\\Desktop\\MisRepos\\PPI\\OrdenesInversionAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAgwDIAAAAAAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAgwDAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-09T00:48:54.12Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "OrdenesInversionContext.cs",
               "DocumentMoniker": "C:\\Users\\jsegovia\\Desktop\\MisRepos\\PPI\\OrdenesInversionAPI\\Models\\OrdenesInversionContext.cs",
               "RelativeDocumentMoniker": "Models\\OrdenesInversionContext.cs",
               "ToolTip": "C:\\Users\\jsegovia\\Desktop\\MisRepos\\PPI\\OrdenesInversionAPI\\Models\\OrdenesInversionContext.cs",
               "RelativeToolTip": "Models\\OrdenesInversionContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-09T00:45:23.449Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\jsegovia\\Desktop\\MisRepos\\PPI\\OrdenesInversionAPI\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "Services\\UserService.cs",
               "ToolTip": "C:\\Users\\jsegovia\\Desktop\\MisRepos\\PPI\\OrdenesInversionAPI\\Services\\UserService.cs",
               "RelativeToolTip": "Services\\UserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAOAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwCcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-09T00:44:53.216Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "OrdenInversion.cs",
               "DocumentMoniker": "C:\\Users\\jsegovia\\Desktop\\MisRepos\\PPI\\OrdenesInversionAPI\\Models\\OrdenInversion.cs",
               "RelativeDocumentMoniker": "Models\\OrdenInversion.cs",
@@ -102,8 +102,7 @@
               "RelativeToolTip": "Models\\OrdenInversion.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAgwCQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T00:15:57.519Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-09T00:15:57.519Z"
             }
           ]
         }

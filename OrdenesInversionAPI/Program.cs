@@ -14,17 +14,15 @@ builder.Services.AddDbContext<OrdenesInversionContext>(options =>
     options.UseInMemoryDatabase(databaseName: "TestDb")
 );
 
-builder.Services.AddScoped<IOrdenInversionService, OrdenInversionService>();
+builder.Services.AddScoped<IOrdenInversionService, OrdenesInversionAPI.Services.OrdenInversionService>();
 builder.Services.AddScoped<IActivoFinancieroService, ActivoFinancieroService>();
-builder.Services.AddScoped<ITipoActivoService, TipoActivoService>();
+// builder.Services.AddScoped<ITipoActivoService, TipoActivoService>(); // Eliminado ya que no se usa TipoActivo
 builder.Services.AddScoped<IEstadoOrdenService, EstadoOrdenService>();
 builder.Services.AddScoped<IUserService, UserService>();
 
-// Configuración de la autenticación básica
 builder.Services.AddAuthentication("BasicAuthentication")
     .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>("BasicAuthentication", null);
 
-// Configuración de la autorización basada en claims
 builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("CanCreateOrder", policy => policy.RequireClaim("CanCreateOrder", "true"));

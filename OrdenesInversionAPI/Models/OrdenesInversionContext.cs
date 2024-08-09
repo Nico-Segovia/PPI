@@ -8,6 +8,7 @@ namespace OrdenesInversionAPI.Models
         public DbSet<ActivoFinanciero> ActivosFinancieros { get; set; }
         public DbSet<EstadoOrden> EstadosOrdenes { get; set; }
         public DbSet<OrdenInversion> OrdenesInversiones { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
